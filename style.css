@@ -1,0 +1,189 @@
+/* ESTILOS */
+/* Realizado por: Míriam Comino Azouz */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #0088ff3d;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    max-width: 400px;
+     align-items: center;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 8px;
+}
+
+/* MENÚ */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center; 
+}
+
+nav a {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #003c5c;
+  border: 2px solid #003366;
+  background-color: white;
+  transition: all 0.3s;
+}
+
+nav a:hover {
+  background-color: #1e91cf;
+  border: 2px solid #07c9ff;
+  color: white;
+}
+
+/* ================= SECCIONES ================= */
+section {
+  padding: 40px 20px;
+}
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #1f4fd8;                 /* azul corporativo */
+  border-bottom: 3px solid #1f4fd8;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+
+/* ================= LISTA SERVICIOS ================= */
+.lista-servicios {
+  list-style-type: square;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+/* ================= GALERÍA ================= */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto; 
+}
+
+.servicio {
+  text-align: center;
+  font-size: 28 px;
+  font-weight: bold;
+  
+  
+}
+
+  .servicio img {
+    transition: transform 0.3s;
+    width: 200px;
+    height: 200px;    
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+
+.servicio img:hover {
+  transform: scale(1.1);
+}
+
+/* ESTILO DE LA TABLA */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+th {
+  background-color: #003366;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  border: 1px solid #003366;
+  padding: 10px;
+  text-align: center;
+}
+
+/* FORMULARIO */
+form {
+  max-width: 400px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, select, textarea, button {
+  width: 100%;
+  margin-top: 5px;
+  padding: 8px;
+}
+
+button {
+  margin-top: 15px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0055aa;
+}
+
+/* PIE DE PÁGINA(FOOTER) */
+footer {
+  background-color: #f0f6ff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer img {
+  width: 50px;
+  display: inline-block;
+  margin: 5px;
+}

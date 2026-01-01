@@ -1,0 +1,197 @@
+<!--Archivo HTML creado por: Míriam Comino Azouz
+Módulo: Desarrollo de Aplicaciones Web -->
+<!DOCTYPE html>
+<html>
+    <head> <!--Cabecera del documento-->
+        <meta charset="UTF-8">
+        <title>Hospital de Alta Resolución de Roquetas de Mar (HAR)</title>
+        <link rel="stylesheet" href="style.css"> <!--Contenido estilado mediante un archivo externo CSS enlazado -->
+
+    </head>
+
+    <body> <!--Cuerpo del documento-->
+        <!--1.1. Logotipo-->
+        <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Hospital de Alta Resolución de Roquetas de Mar">
+        </div>
+        </header>
+
+    <br>    
+
+        <!--1.2. Menú-->
+        <nav> <!--Definimos el menú de navegación-->
+            <ul>
+                <li><a href="#inicio">Inicio</a></li> <!--Enlaces internos-->
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#horario">Horario</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+    <main> <!--Contenido principal de la página-->
+
+        <!--1.3. Sección inicio-->
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <figure>
+                <img class="banner" src="img/Consultas.jpg" title=" Consultas del Hospital de Roquetas de Mar">
+                <figcaption>Consultas del Hospital de Alta Resolución de Roquetas de Mar</figcaption> <!--Pie de foto-->
+            </figure>
+             <br> 
+
+            <p>
+                El Hospital de Alta Resolución de Roquetas de Mar de la provincia de Almería tiene prevista su apertura para el año 2026. Su apertura se realizará por fases, una por año, hasta finalizar en el año 2028.
+                <br>
+                El hospital también recibe el nombre de 'Gabriel Amat'. El hospital contará con 53 habitaciones para hospitalizar a los pacientes, y con 23 consultas.
+            </p>
+
+            <br>
+
+            <ul class="lista-servicios"> <!--Lista no ordenada-->
+                <li>Atención primaria</li>
+                <li>Pediatría</li>
+                <li>Urgencias</li>
+                <li>Cirugía</li>
+            </ul>
+        </section>
+
+
+        <!--1.4. Sección servicios-->
+        <section id="servicios">
+            <h2>Servicios</h2>
+
+            <div class="galeria"> <!--Defino un entorno conjunto para las 4 imagénes-->
+                <div class="servicio">
+                    <img src="img/urgencias.jpeg" alt="Urgencias">
+                    <p>Urgencias</p>
+                </div>
+
+                <div class="servicio">
+                    <img src="img/pediatria.jpg" alt="Pediatría">
+                    <p>Pediatría</p>
+                </div>
+
+                <div class="servicio">
+                    <img src="img/cirugia.jpg" alt="Cirugía">
+                    <p>Cirugía</p>
+                </div>
+
+                <div class="servicio">
+                    <img src="img/aprimaria.jpg" alt="Atención primaria">
+                    <p>Atención primaria</p>
+                </div>
+            </div>
+        </section>
+
+        <!--1.5. Sección horario-->
+        <section id="horario">
+            <h2>Horario</h2>
+
+            <table>
+                <caption>Horario de Servicios</caption>
+                <tr>
+                    <th>Día</th>
+                    <th colspan="2">Horario</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Lunes a Viernes</td>
+                    <td>Mañana</td>
+                    <td>08:00 - 14:00</td>
+                </tr>
+                <tr>
+                    <td>Tarde</td>
+                    <td>16:00 - 20:00</td>
+                </tr>
+                <tr>
+                    <td>Sábados</td>
+                    <td colspan="2">09:00 - 14:00</td>
+                </tr>
+            </table>
+        </section>
+
+
+        <!--1.6. Sección contacto-->
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <form> <!--Formulario de contacto del hospital-->
+                <label>Nombre y apellidos</label>
+                <input type="text" required> <!--'required' indica que debe rellenarse obligatoriamente-->
+
+                <label>Email</label>
+                <input type="email" required>
+
+                <label>Teléfono</label>
+                <input type="tel" required>
+
+                <label>Motivo de la consulta</label>
+                <select>
+                    <option>Atención primaria</option>
+                    <option>Pediatría</option>
+                    <option>Especialidades</option>
+                    <option>Urgencias</option>
+                    <option>Cirugía</option>
+                    <option>Otro</option>
+                </select>
+
+                <label>Comentarios</label>
+                <textarea rows="4"></textarea>
+
+                <p>Preferencia de contacto:</p>
+                <input type="radio" name="contacto"> Email
+                <input type="radio" name="contacto"> Teléfono
+
+                <label>Fecha de la cita</label>
+                <input type="date">
+
+                <label>Hora de la cita</label>
+                <input type="time">
+
+                <p>
+                    <input type="checkbox"> Aceptar política de privacidad
+                </p>
+                <p>
+                    <input type="checkbox"> Aceptar recibir noticias y promociones
+                </p>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+            </main>
+
+    <!--1.7. Pie de página-->
+    <footer>
+        <hr> <!--Línea horizontal-->
+        <p>
+            Hospital de Alta Resolución de Roquetas de Mar<br>
+            Dirección: Avenida Costa de Almería 100, Roquetas de Mar (Almería)<br>
+            Teléfono: 950 320 000 <br>
+            Email: info@hospitalroquetas.es
+        </p>
+
+        <p>
+            Autora: Míriam Comino Azouz <br><!--'br' indica salto de línea-->
+            Módulo: LMSGI, Curso 2025-26
+        </p>
+
+        <hr> <!--Línea horizontal-->
+
+        <!--Enlaces a las validaciones y RSS-->
+        <a href="feed/rss.xml">
+            <img src="img/rss.png" alt="RSS">
+        </a>
+        <a href="img/validacion-rss.png">
+            <img src="img/w3c.jpg" alt="Validación RSS">
+        </a>
+        <a href="img/validacion-html.png">
+            <img src="img/html.png" alt="Validación HTML">
+        </a>
+        <a href="img/validacion-css.png">
+            <img src="img/css.png" alt="Validación CSS">
+        </a>
+    </footer>
+
+    </body>
+</html>
